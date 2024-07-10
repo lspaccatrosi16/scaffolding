@@ -6,7 +6,7 @@ class HelloComponent extends Component {
 	}
 	
 	connectedCallback() {
-		const shadowRoot = this.attachShadow(mode: "closed");
+		const shadowRoot = this.attachShadow({mode: "closed"});
 		const template = document.createElement("template");
 		template.innerHTML = `<h1>Hello, World!</h1>`;
 		shadowRoot.appendChild(template);
@@ -17,4 +17,5 @@ class HelloComponent extends Component {
 customElements.define("hello-component", Component);
 
 export {};
+
 
