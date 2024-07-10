@@ -14,8 +14,9 @@ class HelloComponent extends Component {
 
 }
 
-customElements.define("hello-component", Component);
+customElements.define("hello-component", HelloComponent);
 
 export {};
+
 
 
