@@ -9,7 +9,7 @@ class HelloComponent extends Component {
 		const shadowRoot = this.attachShadow({mode: "closed"});
 		const template = document.createElement("template");
 		template.innerHTML = `<h1>Hello, World!</h1>`;
-		shadowRoot.appendChild(template);
+		shadowRoot.appendChild(template.content);
 	}
 
 }
